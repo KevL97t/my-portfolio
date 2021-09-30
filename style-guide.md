@@ -17,6 +17,7 @@ Very dark cyan: hsl(179, 100%, 13%)
 
 ### Neutral
 
+silver chalice: #ADADAD;
 Transparent white (paragraphs): hsla(0, 0%, 100%, 0.85)
 Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
 
