@@ -15,7 +15,7 @@ html{
     justify-content: space-around;
 }
 
-.about-main-container{
+.landing-main-container{
     width: 100%;
     height: 100vh;
     display: flex;
@@ -25,14 +25,14 @@ html{
     background: linear-gradient(45deg, rgb(0, 0, 0), rgb(68, 67, 67));
 }
 
-.about-main-container .title-container{
+.landing-main-container .title-container{
     font-size: 6rem;
     font-weight: 400;
     font-family: 'Noto Sans Display', sans-serif;
     color: #E0B400;
 }
 
-.about-main-container .main-text-container{
+.landing-main-container .main-text-container{
     width: 70%;
     margin: 0 auto;
     font-size: 2.2rem;
@@ -41,11 +41,11 @@ html{
     text-align: center;
 }
 
-.about-main-container .main-text-container strong{
+.landing-main-container .main-text-container strong{
     color: #E0B400;
 }
 
-.about-main-container .logo-container{
+.landing-main-container .logo-container{
     width: 150px;
     height: 150px;
     background-image: url("../assets/images/generic-logo.jpg");
@@ -57,7 +57,7 @@ html{
 }
 
 
-.about-main-container .button-container{
+.landing-main-container .button-container{
     width: 225px;
     height: 60px;
     margin: 0 auto;
@@ -72,7 +72,7 @@ html{
     cursor: pointer;
 }
 
-.about-main-container .button-container .button-logo--container{
+.landing-main-container .button-container .button-logo--container{
     position: absolute;
     margin-left: 8px;
     margin-top: -3px;
@@ -83,7 +83,7 @@ html{
     background-size: cover;
 }
 
-.about-main-container .button-container a{
+.landing-main-container .button-container a{
     text-decoration: none;
     color: hsl(0, 0%, 95%);
 }
