@@ -12,24 +12,24 @@ The designs were created to the following widths:
 ### Primary
 
 Bright orange: hsl(31, 77%, 52%)
-Dark cyan: hsl(184, 100%, 22%)
+Gold Metallic: #E0B400
 Very dark cyan: hsl(179, 100%, 13%)
 
 ### Neutral
 
-Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
+Transparent white (paragraphs): hsla(0, 0%, 100%, 0.85)
 Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
 
 ## Typography
 
 ### Body Copy
 
-- Font size: 15px
+- Font size: 22px
 
 ### Font
 
-- Family: [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca)
-- Weights: 400
+- Family: [Noto Sans Display](https://fonts.google.com/noto/specimen/Noto+Sans+Display)
+- Weights: 300, 400, 600, 700
 
-- Family: [Big Shoulders Display](https://fonts.google.com/specimen/Big+Shoulders+Display)
-- Weights: 700
+- Family: [Ubuntu](https://fonts.google.com/specimen/Ubuntu)
+- Weights: 400, 700

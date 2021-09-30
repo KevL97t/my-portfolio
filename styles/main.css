@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html{
+    font-size: 62.5%;
+    font-family: 'Ubuntu', sans-serif;
+}
 
 .main-container{
     display: flex;
@@ -16,6 +20,70 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
+    background: linear-gradient(45deg, rgb(0, 0, 0), rgb(68, 67, 67));
+}
+
+.about-main-container .title-container{
+    font-size: 6rem;
+    font-weight: 400;
+    font-family: 'Noto Sans Display', sans-serif;
+    color: #E0B400;
+}
+
+.about-main-container .main-text-container{
+    width: 70%;
+    margin: 0 auto;
+    font-size: 2.2rem;
+    line-height: 3.0rem;
+    color: hsla(0, 0%, 100%, 0.85);
+    text-align: center;
+}
+
+.about-main-container .main-text-container strong{
+    color: #E0B400;
+}
+
+.about-main-container .logo-container{
+    width: 40%;
+    height: 150px;
+    background-image: url("../assets/images/generic-logo.jpg");
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    /* border: 1px solid hsl(0, 0%, 95%); */
+}
+
+
+.about-main-container .button-container{
+    width: 60%;
+    height: 60px;
+    margin: 0 auto;
+    text-align: start;
+    background-color: #E0B400;
+    padding-top: 18px;
+    padding-left: 50px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    border-radius: 25px;
+    border: 2px solid hsl(0, 0%, 95%);
+    cursor: pointer;
+}
+
+.about-main-container .button-container .button-logo--container{
+    position: absolute;
+    margin-left: 8px;
+    margin-top: -3px;
+    width: 30px;
+    height: 30px;
+    background-image: url("../assets/icons/arrow-down.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-main-container .button-container a{
+    text-decoration: none;
+    color: hsl(0, 0%, 95%);
 }
