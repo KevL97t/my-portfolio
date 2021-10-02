@@ -20,9 +20,9 @@ html{
 } */
 
 .btn-item{
-    width: 60px;
-    height: 60px;
-    background-image: url("../assets/icons/walter-wite.png");
+    width: 40px;
+    height: 33px;
+    background-image: url("../assets/icons/white-menu.png");
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: 20px;
@@ -34,12 +34,18 @@ html{
     font-size: 2rem;
     line-height: 3rem;
     margin-top: 5px;
-    margin-left: 40px;
+    margin-left: 60px;
     font-family: 'Ubuntu', sans-serif;
     overflow: hidden;
     max-height: 0px;
-    background-color: red;
+    /* background-color: red; */
     opacity: 0;
+    transition: 0.4s ease;
+}
+
+.item-content a:hover{
+    color: #E0B400;
+    font-size: 2.4;
     transition: 0.4s ease;
 }
 
@@ -137,4 +143,31 @@ html{
 
 .prueba{
     height: 300px;
+}
+
+.about-main-container{
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.about-main-container .about--main-text-container{
+    text-align: start;
+    color: hsl(0, 0%, 95%);
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+}
+.about-main-container .about--quote-text-container{
+    text-align: center;
+    color: hsla(0, 0%, 100%, 0.85);
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+}
+
+.about-main-container .about--quote-text-container .about--quote-text-container__author{
+    margin-top: 15px;
+    text-align: end;
 }

@@ -13,13 +13,12 @@ The designs were created to the following widths:
 
 Bright orange: hsl(31, 77%, 52%)
 Gold Metallic: #E0B400
-Very dark cyan: hsl(179, 100%, 13%)
 
 ### Neutral
 
 silver chalice: #ADADAD;
 Transparent white (paragraphs): hsla(0, 0%, 100%, 0.85)
-Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
+Very light gray: hsl(0, 0%, 95%)
 
 ## Typography
 
