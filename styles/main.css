@@ -162,7 +162,7 @@ html{
 }
 .about-main-container .about--quote-text-container{
     text-align: center;
-    color: hsla(0, 0%, 100%, 0.85);
+    color: #E0B400;
     font-size: 1.4rem;
     line-height: 1.8rem;
 }
