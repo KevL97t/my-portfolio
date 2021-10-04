@@ -61,3 +61,11 @@ console.log(quoteBtn)
 quoteBtn.addEventListener("click", function(e){
      mostrarFrase();
 });
+
+
+
+// contador de diplomas
+
+let devDiplomas = document.querySelectorAll(".dev-diplomas-item");
+let totalDev = devDiplomas.length;
+console.log(totalDev);
