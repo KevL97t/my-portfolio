@@ -224,11 +224,15 @@ html{
 
 .main-learning-container .learning--main-text-container{
     width: 100%;
-    height: 250px;
+    height: 310px;
     font-size: 1.8rem;
     line-height: 2.8rem;
     color: hsl(0, 0%, 95%);
     text-align: start;
+}
+
+.main-learning-container .learning--main-text-container strong{
+    color: #E0B400;
 }
 
 .main-learning-container .learning--main-diploma-container{
@@ -260,4 +264,39 @@ html{
     background-image: url("../assets/icons/arrow-down.svg");
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.learning--diplomas-container{
+    width: 100%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.learning--diplomas-container .diploma{
+    width: 90px;
+    height: 90px;
+    background-color: blue;
+}
+
+                          /* DIPLOMAS HIDDEN SECTION STYLES */
+
+.main-diplomas-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.main-diplomas-container .dev-diplomas{
+    width: 100%;
+    height: 40vh;
+    background-color: red;
+}
+
+.main-diplomas-container .other-categories{
+    width: 100%;
+    height: 40vh;
+    background-color: blue;
 }
