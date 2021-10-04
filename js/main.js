@@ -50,3 +50,11 @@ function generarFrase(newQ, newA){
 }
 
 generarFrase("Random Quote","Random Author")
+
+
+// CÓDIGO BOTON QUE GENERA FRASES
+
+let quoteBtn = document.querySelector(".about-main-container .about--quote-button-container");
+
+console.log(quoteBtn)
+

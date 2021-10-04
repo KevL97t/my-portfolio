@@ -111,14 +111,14 @@ html{
 
 .landing-main-container .button-container{
     width: 225px;
-    height: 60px;
+    height: 50px;
     margin: 0 auto;
     text-align: start;
     background-color: #E0B400;
-    padding-top: 18px;
-    padding-left: 50px;
+    padding-top: 12px;
+    padding-left: 15px;
     font-size: 1.8rem;
-    font-weight: 600;
+    /* font-weight: 600; */
     border-radius: 25px;
     border: 2px solid hsl(0, 0%, 95%);
     cursor: pointer;
@@ -126,7 +126,7 @@ html{
 
 .landing-main-container .button-container .button-logo--container{
     position: absolute;
-    margin-left: 8px;
+    /* margin-left: 3px; */
     margin-top: -3px;
     width: 30px;
     height: 30px;
@@ -155,11 +155,19 @@ html{
 }
 
 .about-main-container .about--main-text-container{
+    width: 100%;
     text-align: start;
     color: hsl(0, 0%, 95%);
     font-size: 1.8rem;
-    line-height: 2.6rem;
+    line-height: 2.8rem;
 }
+
+.about-main-container .about--main-text-container strong{
+   
+    color: #E0B400;
+
+}
+
 .about-main-container .about--quote-text-container{
     text-align: center;
     color: #E0B400;
@@ -170,4 +178,20 @@ html{
 .about-main-container .about--quote-text-container .about--quote-text-container__author{
     margin-top: 15px;
     text-align: end;
+}
+
+.about-main-container .about--quote-button-container{
+    width: 200px;
+    height: 40px;
+    background-color: #E0B400;
+    margin: 0 auto;
+    border-radius: 15px;
+    border: 2px solid white;
+}
+
+.about-main-container .about--quote-button-container p{
+        text-align: center;
+        margin-top: 8px;
+        color: hsl(0, 0%, 95%);
+        font-size: 1.6rem;
 }
