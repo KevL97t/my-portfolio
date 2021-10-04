@@ -1,3 +1,5 @@
+                         /* initial styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -18,6 +20,10 @@ html{
     margin-left: 10px;
     border-radius: 15px;
 } */
+
+
+                         /* MAIN MENU STYLES */
+
 
 .btn-item{
     width: 40px;
@@ -61,12 +67,20 @@ html{
     opacity: 1;
 }
 
+
+                         /* MAIN CONTAINER STYLES */
+
+
 .main-container{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     
 }
+
+
+                         /* LANDING SECTION STYLES */
+
 
 .landing-main-container{
     width: 100%;
@@ -119,7 +133,7 @@ html{
     padding-left: 15px;
     font-size: 1.8rem;
     /* font-weight: 600; */
-    border-radius: 25px;
+    border-radius: 20px;
     border: 2px solid hsl(0, 0%, 95%);
     cursor: pointer;
 }
@@ -141,9 +155,8 @@ html{
 }
 
 
-.prueba{
-    height: 300px;
-}
+                          /* ABOUT SECTION STYLES */
+
 
 .about-main-container{
     width: 80%;
@@ -194,4 +207,57 @@ html{
         margin-top: 8px;
         color: hsl(0, 0%, 95%);
         font-size: 1.6rem;
+}
+
+
+                         /* LEARNING SECTION STYLES */
+
+
+.main-learning-container{
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+
+.main-learning-container .learning--main-text-container{
+    width: 100%;
+    height: 250px;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    color: hsl(0, 0%, 95%);
+    text-align: start;
+}
+
+.main-learning-container .learning--main-diploma-container{
+    width: 100%;
+}
+
+.learning--main-diploma-container .learning--main-diploma-container__btn{
+    width: 250px;
+    height: 70px;
+    margin: 0 auto;
+    background-color: #E0B400;
+    border-radius: 15px;
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+.learning--main-diploma-container__btn p{
+    font-size: 1.8rem;
+    padding-top: 8px;
+    color: hsl(0, 0%, 95%);
+    text-align: center;
+}
+
+.learning--main-diploma-container__btn .learning-main-diploma-container__arrowicon{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin-left: 97px;
+    margin-top: -3px;
+    background-image: url("../assets/icons/arrow-down.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }

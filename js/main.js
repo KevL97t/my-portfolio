@@ -26,11 +26,11 @@ let authorsArray = ["Patrick Rothfuss", "Albert Einstein", "Mahatma Gandhi", "Pa
 let quote = document.getElementById("quote");
 let author = document.getElementById("author");
 
-let randomNumber = Math.round(Math.random()*(quotesArray.length-1));
 
-console.log(randomNumber);
 
 function mostrarFrase(){
+   let randomNumber = Math.round(Math.random()*(quotesArray.length-1));
+    console.log(randomNumber);
     let newQuote = quotesArray[randomNumber];
     let newAuthor = authorsArray[randomNumber];
     console.log(newQuote)
@@ -42,14 +42,14 @@ quote.onload = mostrarFrase();
 
 // Funcion para crear nuevas frases con su respectivo autor
 
-function generarFrase(newQ, newA){
-    let generateQuote = newQ;
-    let generateAuthor = newA;
-    quotesArray.push(generateQuote);
-    authorsArray.push(generateAuthor);
-}
+// function generarFrase(newQ, newA){
+//     let generateQuote = newQ;
+//     let generateAuthor = newA;
+//     quotesArray.push(generateQuote);
+//     authorsArray.push(generateAuthor);
+// }
 
-generarFrase("Random Quote","Random Author")
+// generarFrase("Random Quote","Random Author")
 
 
 // CÓDIGO BOTON QUE GENERA FRASES
@@ -58,3 +58,6 @@ let quoteBtn = document.querySelector(".about-main-container .about--quote-butto
 
 console.log(quoteBtn)
 
+quoteBtn.addEventListener("click", function(e){
+     mostrarFrase();
+});
