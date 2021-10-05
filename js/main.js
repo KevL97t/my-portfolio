@@ -19,9 +19,9 @@ function ocultarClase(){
 
 // Generador de frase aleatoria
 
-let quotesArray = ["There are three things all wise men fear: the sea in storm, a night with no moon, and the anger of a gentle man.","We cannot solve problems with the kind of thinking we employed when we came up with them.","Learn as if you will live forever, live like you will die tomorrow.", "When we strive to become better than we are, everything around us becomes better as well.", "Don’t let yesterday take up too much of today.", "He who conquers himself is the mightiest warrior."]
+let quotesArray = ["There are three things all wise men fear: the sea in storm, a night with no moon, and the anger of a gentle man.","We cannot solve problems with the kind of thinking we employed when we came up with them.","Learn as if you will live forever, live like you will die tomorrow.", "When we strive to become better than we are, everything around us becomes better as well.", "Don’t let yesterday take up too much of today.", "He who conquers himself is the mightiest warrior.", "The successful man will profit from his mistakes and try again in a different way.", "He is a wise man who does not grieve for the things which he has not, but rejoices for those which he has.", "Education is the most powerful weapon which you can use to change the world.", "The most difficult thing is the decision to act, the rest is merely tenacity.", "Talent wins games, but teamwork and intelligence win championships.", "Just one small positive thought in the morning can change your whole day.", "It is never too late to be what you might have been.", "Opportunities don't happen, you create them.", "I am not a product of my circumstances. I am a product of my decisions.", "Someone's sitting in the shade today because someone planted a tree a long time ago.", "True freedom is impossible without a mind made free by discipline.", "Life is like riding a bicycle. To keep your balance you must keep moving.", "We are what we repeatedly do. Excellence, then, is not an act, but a habit.", "Perfection is not attainable. But if we chase perfection we can catch excellence."]
 
-let authorsArray = ["Patrick Rothfuss", "Albert Einstein", "Mahatma Gandhi", "Paulo Coelho", "Will Rogers", "Confucius"]
+let authorsArray = ["Patrick Rothfuss", "Albert Einstein", "Mahatma Gandhi", "Paulo Coelho", "Will Rogers", "Confucius", "Dale Carnegie", "Epictetus", "Nelson Mandela", "Amelia Earhart", "Michael Jordan", "Dalai Lama", "George Eliot", "Chris Grosser", "Stephen R. Covey", "Warren Buffet", "Mortimer J. Adler", "Albert Einstein", "Aristotle", "Vince Lombardi"]
 
 let quote = document.getElementById("quote");
 let author = document.getElementById("author");
@@ -57,8 +57,6 @@ quote.onload = mostrarFrase();
 // CÓDIGO BOTON QUE GENERA FRASES
 
 let quoteBtn = document.querySelector(".about-main-container .about--quote-button-container");
-
-console.log(quoteBtn)
 
 quoteBtn.addEventListener("click", function(e){
      mostrarFrase();
