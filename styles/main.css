@@ -34,6 +34,12 @@ html{
     margin-top: 20px;
     margin-left: 20px;
     cursor: pointer;
+    transition: .45s ease;
+}
+
+.btn-item.active{
+    transform: rotate(90deg);
+    transform-origin: center;
 }
 
 .item-content{
@@ -200,7 +206,13 @@ html{
     margin: 0 auto;
     border-radius: 15px;
     border: 2px solid white;
+    transition: .45s;   
 }
+
+/* .about-main-container .about--quote-button-container:hover{
+    transform: scale(1.1);
+    transform-origin: center;
+} */
 
 .about-main-container .about--quote-button-container p{
         text-align: center;
@@ -264,7 +276,15 @@ html{
     background-image: url("../assets/icons/arrow-down.svg");
     background-size: cover;
     background-repeat: no-repeat;
+    transition: .45s ease;
 }
+
+
+.active > .learning-main-diploma-container__arrowicon{
+    transform: rotate(180deg);
+    transform-origin: center;
+}
+
 
 .learning--diplomas-container{
     width: 100%;
@@ -332,7 +352,6 @@ html{
 .dev-diplomas-container{
     margin: 22px 0px;
     white-space: nowrap;
-    
 }
 
 .dev-diplomas-item{
@@ -419,7 +438,6 @@ html{
 }
 
 .other-category-item{
-    background-color: salmon;
     width: 210px;
     height: 150px;
     border-radius: 12px;

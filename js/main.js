@@ -17,7 +17,7 @@ function ocultarClase(){
 }
 
 
-// Generador de frases aleatorio
+// Generador de frase aleatoria
 
 let quotesArray = ["There are three things all wise men fear: the sea in storm, a night with no moon, and the anger of a gentle man.","We cannot solve problems with the kind of thinking we employed when we came up with them.","Learn as if you will live forever, live like you will die tomorrow.", "When we strive to become better than we are, everything around us becomes better as well.", "Don’t let yesterday take up too much of today.", "He who conquers himself is the mightiest warrior."]
 
@@ -41,6 +41,7 @@ function mostrarFrase(){
 quote.onload = mostrarFrase();
 
 // Funcion para crear nuevas frases con su respectivo autor
+//Esta no se ha usado todavía
 
 // function generarFrase(newQ, newA){
 //     let generateQuote = newQ;
@@ -50,6 +51,7 @@ quote.onload = mostrarFrase();
 // }
 
 // generarFrase("Random Quote","Random Author")
+
 
 
 // CÓDIGO BOTON QUE GENERA FRASES
@@ -82,8 +84,10 @@ diplomaBtn.addEventListener("click", function(e){
     // console.log(e.target)
     if(learningDeploy.className == "main-learning-container active"){
         hideSection();
+        diplomaBtn.classList.remove("active")
     } else {
         learningDeploy.classList.add("active")
+        diplomaBtn.classList.add("active")
     }
     console.log(learningDeploy);
 });
@@ -91,3 +95,5 @@ diplomaBtn.addEventListener("click", function(e){
 function hideSection(){
     learningDeploy.classList.remove("active")
 }
+
+
