@@ -34,11 +34,11 @@ html{
     margin-top: 20px;
     margin-left: 20px;
     cursor: pointer;
-    transition: .45s ease;
+    transition: .5s ease;
 }
 
 .btn-item.active{
-    transform: rotate(90deg);
+    transform: rotate(360deg);
     transform-origin: center;
 }
 
@@ -52,7 +52,7 @@ html{
     max-height: 0px;
     /* background-color: red; */
     opacity: 0;
-    transition: 0.4s ease;
+    transition: 0.5s ease;
 }
 
 .item-content a:hover{
@@ -276,12 +276,12 @@ html{
     background-image: url("../assets/icons/arrow-down.svg");
     background-size: cover;
     background-repeat: no-repeat;
-    transition: .45s ease;
+    transition: .8s ease;
 }
 
 
 .active > .learning-main-diploma-container__arrowicon{
-    transform: rotate(180deg);
+    transform: rotate(540deg);
     transform-origin: center;
 }
 
@@ -484,5 +484,4 @@ html{
 .prueba{
     height: 100vh;
     width: 100%;
-    background-color: red;
 }
