@@ -69,3 +69,25 @@ quoteBtn.addEventListener("click", function(e){
 let devDiplomas = document.querySelectorAll(".dev-diplomas-item");
 let totalDev = devDiplomas.length;
 console.log(totalDev);
+
+
+// CÓDIGO DE BOTON PARA MOSTRAR/OCULTAR DIPLOMAS
+
+
+let diplomaBtn = document.querySelector(".learning--main-diploma-container__btn")
+let learningDeploy = document.querySelector(".main-learning-container")
+
+diplomaBtn.addEventListener("click", function(e){
+    // let btn = e.target;
+    // console.log(e.target)
+    if(learningDeploy.className == "main-learning-container active"){
+        hideSection();
+    } else {
+        learningDeploy.classList.add("active")
+    }
+    console.log(learningDeploy);
+});
+
+function hideSection(){
+    learningDeploy.classList.remove("active")
+}

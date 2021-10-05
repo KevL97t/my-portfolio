@@ -286,38 +286,47 @@ html{
 
 .main-diplomas-container{
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    overflow: hidden;
+    max-height: 0px;
+    opacity: 0;
+    transition: 0.4s ease;
+}
+
+.active ~ .main-diplomas-container{
+    max-height: 1000px;
+    padding: 10px;
+    opacity: 1;
 }
 
 .main-diplomas-container .dev-diplomas-carousel{
     width: 100%;
     height: 200px;
-    margin-top: 50px;
     overflow-x: scroll;
     position: relative;
     display: flex;
-    background-color: #E0B400;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
-    /* border-top: 3px solid white; */
-    border-bottom: 3px solid white;
+    /* border-top: 2px solid hsla(0, 0%, 100%, 0.85);
+    border-bottom: 2px solid hsla(0, 0%, 100%, 0.85); */
 }
 
 
 .dev-diplomas-carousel__text{
-    position: absolute;
+    /* margin-top: 20px; */
     width: 220px;
-    height: 30px;
+    height: 40px;
     background-color: #E0B400;
-    margin-top: -485px;
     color: hsl(0, 0%, 95%);
     font-size: 1.6rem;
-    padding-top: 5px;
-    padding-left: 5px;
-    border-top-right-radius: 12px;
+    padding-top: 8px;
+    border-radius: 10px;
+    align-self: center;
+    text-align: center;
+    border: 2px solid white;
 }
 
 .dev-diplomas-container{
@@ -327,7 +336,6 @@ html{
 }
 
 .dev-diplomas-item{
-    background-color: salmon;
     width: 210px;
     height: 150px;
     border-radius: 12px;
@@ -381,10 +389,10 @@ html{
     overflow-x: scroll;
     position: relative;
     display: flex;
-    background-color: #E0B400;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
-    border-bottom: 3px solid white;
+    /* border-top: 2px solid hsla(0, 0%, 100%, 0.85);
+    border-bottom: 2px solid hsla(0, 0%, 100%, 0.85); */
 }
 
 ::-webkit-scrollbar {
@@ -392,16 +400,17 @@ html{
 }
 
 .other-category-carousel__text{
-    position: absolute;
+    /* margin-top: 15px; */
     width: 220px;
-    height: 30px;
+    height: 40px;
     background-color: #E0B400;
-    margin-top: 130px;
     color: hsl(0, 0%, 95%);
     font-size: 1.6rem;
-    padding-top: 5px;
-    padding-left: 5px;
-    border-top-right-radius: 12px;
+    padding-top: 8px;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid white;
+    align-self: center;
 }
 
 .main-diplomas-container .other-category-container{
@@ -452,4 +461,10 @@ html{
 .other-category-container:hover .other-category-item:hover{
     transform: scale(1.2);
     opacity: 1;
+}
+
+.prueba{
+    height: 100vh;
+    width: 100%;
+    background-color: red;
 }
