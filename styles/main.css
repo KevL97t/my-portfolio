@@ -32,7 +32,7 @@ html{
     border-bottom-left-radius: 8px;
     width: 0px;
     height: 50px;
-    margin-left: 380px;
+    margin-left: 398.5px;
     margin-top: -20px;
     transition: 2s ease;
     transition-delay: 4s;
@@ -40,8 +40,8 @@ html{
 
 .github-logo-container.active{
     width: 55px;
-    transform: translate3d(-60px,0,0);
-    transform-origin: center right;
+    transform: translate3d(-78px,0,0);
+    transform-origin: center;
 }
 
 .github-logo-container img{
