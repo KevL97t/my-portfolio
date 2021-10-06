@@ -121,3 +121,14 @@ function animarGitH(){
 }
 
 gitHLogo.onload = animarGitH();
+
+
+// ANIMADOR DE TEXTO PRINCIPAL DE LANDING SECTION
+
+let landingText = document.querySelector(".landing-main-container .main-text-container");
+
+function animarTextoLanding(){
+    landingText.classList.add("active");
+}
+
+landingText.onload = animarTextoLanding();

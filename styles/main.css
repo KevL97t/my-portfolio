@@ -23,8 +23,7 @@ html{
     display: none;
 }
 
-                         /* MAIN MENU STYLES */
-
+                        /* GITHUB LOGO STYLES */
 
 .github-logo-container{
     position: absolute;
@@ -49,6 +48,9 @@ html{
     width: 40px;
     height: 40px;
 }
+
+                         /* MAIN MENU STYLES */
+
 
 .btn-item{
     width: 40px;
@@ -170,11 +172,24 @@ html{
 
 .landing-main-container .main-text-container{
     width: 70%;
+    height: 0px;
     margin: 0 auto;
     font-size: 2.2rem;
     line-height: 3.0rem;
     color: hsla(0, 0%, 100%, 0.85);
     text-align: center;
+    opacity: 0;
+    transform-origin: center;
+    transition: 4s ease;
+    transition-delay: 3s;
+    border-radius: 10px;
+}
+
+.main-text-container.active{
+    height: 130px;
+    border: 2px solid var(--main-golden);
+    opacity: 1;
+    padding-bottom: 10px;
 }
 
 .landing-main-container .main-text-container strong{
