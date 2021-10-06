@@ -6,20 +6,17 @@
     box-sizing: border-box;
 }
 
+:root{
+    --main-golden: #E0B400;
+    --main-yellow: rgb(240, 240, 48);
+    --main-white: hsl(0, 0%, 95%);
+}
+
 html{
     font-size: 62.5%;
     font-family: 'Ubuntu', sans-serif;
     background: linear-gradient(45deg, rgb(0, 0, 0), rgb(68, 67, 67));
 }
-
-/* .btn-container{
-    width: 80px;
-    height: 60px;
-    background-color: red;
-    margin-top: 20px;
-    margin-left: 10px;
-    border-radius: 15px;
-} */
 
 
                          /* MAIN MENU STYLES */
@@ -75,7 +72,7 @@ html{
 }
 
 .item-content a{
-    color: white;
+    color: var(--main-white);
     text-decoration: none;
     font-weight: 400;
 }
@@ -183,7 +180,7 @@ html{
     font-size: 1.8rem;
     /* font-weight: 600; */
     border-radius: 20px;
-    border: 2px solid hsl(0, 0%, 95%);
+    border: 2px solid var(--main-white);
     cursor: pointer;
 }
 
@@ -200,7 +197,7 @@ html{
 
 .landing-main-container .button-container a{
     text-decoration: none;
-    color: hsl(0, 0%, 95%);
+    color: var(--main-white);
 }
 
 
@@ -219,7 +216,7 @@ html{
 .about-main-container .about--main-text-container{
     width: 100%;
     text-align: start;
-    color: hsl(0, 0%, 95%);
+    color: var(--main-white);
     font-size: 1.8rem;
     line-height: 2.8rem;
 }
@@ -248,7 +245,7 @@ html{
     background-color: #E0B400;
     margin: 0 auto;
     border-radius: 15px;
-    border: 2px solid white;
+    border: 2px solid var(--main-white);
     transition: .45s;   
 }
 
@@ -260,7 +257,7 @@ html{
 .about-main-container .about--quote-button-container p{
         text-align: center;
         margin-top: 8px;
-        color: hsl(0, 0%, 95%);
+        color: var(--main-white);
         font-size: 1.6rem;
 }
 
@@ -282,7 +279,7 @@ html{
     height: 310px;
     font-size: 1.8rem;
     line-height: 2.8rem;
-    color: hsl(0, 0%, 95%);
+    color: var(--main-white);
     text-align: start;
 }
 
@@ -300,13 +297,13 @@ html{
     margin: 0 auto;
     background-color: #E0B400;
     border-radius: 15px;
-    border: 2px solid hsl(0, 0%, 95%);
+    border: 2px solid var(--main-white);
 }
 
 .learning--main-diploma-container__btn p{
     font-size: 1.8rem;
     padding-top: 8px;
-    color: hsl(0, 0%, 95%);
+    color: var(--main-white);
     text-align: center;
 }
 
@@ -383,13 +380,13 @@ html{
     width: 220px;
     height: 40px;
     background-color: #E0B400;
-    color: hsl(0, 0%, 95%);
+    color: var(--main-white);
     font-size: 1.6rem;
     padding-top: 8px;
     border-radius: 10px;
     align-self: center;
     text-align: center;
-    border: 2px solid white;
+    border: 2px solid var(--main-white);
 }
 
 .dev-diplomas-container{
@@ -466,12 +463,12 @@ html{
     width: 220px;
     height: 40px;
     background-color: #E0B400;
-    color: hsl(0, 0%, 95%);
+    color: var(--main-white);
     font-size: 1.6rem;
     padding-top: 8px;
     border-radius: 10px;
     text-align: center;
-    border: 2px solid white;
+    border: 2px solid var(--main-white);
     align-self: center;
 }
 
@@ -539,7 +536,7 @@ html{
 .projects--main-text-container{
     width: 80%;
     height: 60px;
-    color: hsl(0, 0%, 95%);
+    color: var(--main-white);
     font-size: 2.6rem;
     text-align: center;
     margin: 40px auto 0 auto;
@@ -580,7 +577,6 @@ html{
 
 .projects--slider__item-content{
     height: 320px;
-    background-color: green;
 }
 
 .projects--slider__item-content img{
@@ -615,12 +611,13 @@ html{
 .projects--slider__item-text .projects--slider__item-text-text{
     text-align: start;
     font-size: 1.6rem;
-    line-height: 2.8rem;
+    line-height: 2.6rem;
     margin-top: 30px;
     font-weight: 400;
     /* margin-left: 10px; */
     color: black;
     margin-left: 40px;
+    font-weight: 700;
 }
 
 .projects--slider__item-container:hover ~ .projects--slider__item-container{
