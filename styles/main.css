@@ -26,6 +26,30 @@ html{
                          /* MAIN MENU STYLES */
 
 
+.github-logo-container{
+    position: absolute;
+    background-color: var(--main-white);
+    border-bottom-left-radius: 8px;
+    width: 0px;
+    height: 50px;
+    margin-left: 380px;
+    margin-top: -20px;
+    transition: 2s ease;
+    transition-delay: 4s;
+}
+
+.github-logo-container.active{
+    width: 55px;
+    transform: translate3d(-60px,0,0);
+    transform-origin: center right;
+}
+
+.github-logo-container img{
+    margin-top: 5px;
+    width: 40px;
+    height: 40px;
+}
+
 .btn-item{
     width: 40px;
     height: 33px;
@@ -37,6 +61,7 @@ html{
     cursor: pointer;
     transition: 1s ease;
 }
+
 
 .btn-item.active{
     transform: rotate(360deg);
@@ -126,11 +151,6 @@ html{
     transform-origin: center;
 }
 
-
-/* .landing-main-container .title-container strong{
-    transition-delay: 1;
-    color: #E0B400;
-} */
 
 .strong-div-title{
     position: absolute;
@@ -621,10 +641,13 @@ html{
     line-height: 2.6rem;
     margin-top: 30px;
     font-weight: 400;
-    /* margin-left: 10px; */
     color: var(--main-white);
     margin-left: 40px;
-    font-weight: 700;
+}
+
+.projects--slider__item-text .projects--slider__item-text-text li{
+    width: 200px;
+    border-bottom: 1px solid var(--main-golden);
 }
 
 .projects--slider__item-container:hover ~ .projects--slider__item-container{
@@ -639,6 +662,9 @@ html{
     transform: scale(1.15);
     opacity: 1;
 }
+
+
+
 
 
 .prueba{

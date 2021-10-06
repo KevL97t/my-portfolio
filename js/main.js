@@ -110,3 +110,14 @@ function animarTitulo(){
 }
 
 landingTitle.onload = animarTitulo();
+
+
+
+// ANIMADOR DEL LOGO DE GITHUB
+
+let gitHLogo = document.querySelector(".github-logo-container");
+function animarGitH(){
+    gitHLogo.classList.add("active");
+}
+
+gitHLogo.onload = animarGitH();
