@@ -95,3 +95,15 @@ function hideSection(){
 }
 
 
+// ANIMADOR DEL TITULO LANDING PAGE
+
+let landingTitle = document.getElementById("landing-title");
+
+function animarTitulo(){
+    if(landingTitle.className !== "landing-title active"){
+        landingTitle.classList.add("active")
+    }
+    console.log(landingTitle)
+}
+
+landingTitle.onload = animarTitulo();
