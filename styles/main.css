@@ -51,9 +51,10 @@ html{
     font-family: 'Ubuntu', sans-serif;
     overflow: hidden;
     max-height: 0px;
-    /* background-color: rgba(24, 22, 22, 0.678); */
+    background-color: rgba(24, 22, 22, 0.678);
     opacity: 0;
     transition: 0.5s ease;
+    border-bottom: 3px solid #E0B400;
 }
 
 #first-item-content{
@@ -114,18 +115,36 @@ html{
     font-weight: 400;
     font-family: 'Noto Sans Display', sans-serif;
     color: hsla(0, 0%, 100%, 0.85);
-    transition: 2s ease-in-out;
+    transition: 4s ease-in-out;
     transition-delay: 2s;
+    margin-left: 100px;
 }
 
 .landing-main-container .title-container.active{
-    transform: rotate(1800deg);
+    transform: rotate(-7200deg);
     transform-origin: center;
 }
 
 
-.landing-main-container .title-container strong{
+/* .landing-main-container .title-container strong{
+    transition-delay: 1;
     color: #E0B400;
+} */
+
+.strong-div-title{
+    position: absolute;
+    margin-top: -417px;
+    margin-left: -80px;
+    color: #E0B400;
+    font-size: 7rem;
+    font-weight: 700;
+    transition: 5s ease;
+    transition-delay: 1s;
+}
+
+.strong-div-title.active{
+    transform: rotate(1800deg);
+    transform-origin: center;
 }
 
 .landing-main-container .main-text-container{
