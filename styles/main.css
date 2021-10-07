@@ -61,7 +61,7 @@ html{
     margin-top: 20px;
     margin-left: 20px;
     cursor: pointer;
-    transition: 1s ease;
+    transition: .8s ease;
 }
 
 
@@ -81,7 +81,7 @@ html{
     max-height: 0px;
     background-color: rgba(24, 22, 22, 0.678);
     opacity: 0;
-    transition: 0.5s ease;
+    transition: .5s ease;
     border-bottom: 3px solid #E0B400;
 }
 
@@ -149,7 +149,7 @@ html{
 }
 
 .landing-main-container .title-container.active{
-    transform: rotate(-7200deg);
+    transform: rotate(-10800deg);
     transform-origin: center;
 }
 
@@ -180,20 +180,28 @@ html{
     text-align: center;
     opacity: 0;
     transform-origin: center;
-    transition: 4s ease;
+    transition: 3s ease;
     transition-delay: 3s;
     border-radius: 10px;
 }
 
 .main-text-container.active{
     height: 130px;
-    border: 2px solid var(--main-golden);
+    border: 1px solid var(--main-golden);
     opacity: 1;
     padding-bottom: 10px;
+    background-color: #ffcc0017;
 }
 
-.landing-main-container .main-text-container strong{
-    color: #E0B400;
+#landing-strong-text{
+    color: var(--main-white);
+    transition: 1s ease;
+    transition-delay: 7s;
+}
+
+#landing-strong-text.active{
+    color: var(--main-golden);
+    text-decoration: underline;
 }
 
 .landing-main-container .logo-container{
@@ -204,7 +212,14 @@ html{
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 50%;
+    opacity: 0;
     /* border: 1px solid hsl(0, 0%, 95%); */
+    transition: 3s ease;
+    transition-delay: 4s;
+}
+
+.logo-container.active{
+    opacity: 1;
 }
 
 
@@ -221,6 +236,13 @@ html{
     border-radius: 20px;
     border: 2px solid var(--main-white);
     cursor: pointer;
+    opacity: 0;
+    transition: 2s ease;
+    transition-delay: 5s;
+}
+
+.button-container.active{
+    opacity: 1;
 }
 
 .landing-main-container .button-container .button-logo--container{
@@ -258,6 +280,8 @@ html{
     color: var(--main-white);
     font-size: 1.8rem;
     line-height: 2.8rem;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--main-golden);
 }
 
 .about-main-container .about--main-text-container strong{
@@ -315,11 +339,13 @@ html{
 
 .main-learning-container .learning--main-text-container{
     width: 100%;
-    height: 310px;
+    height: 320px;
     font-size: 1.8rem;
     line-height: 2.8rem;
     color: var(--main-white);
     text-align: start;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--main-golden);
 }
 
 .main-learning-container .learning--main-text-container strong{

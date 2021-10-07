@@ -126,9 +126,31 @@ gitHLogo.onload = animarGitH();
 // ANIMADOR DE TEXTO PRINCIPAL DE LANDING SECTION
 
 let landingText = document.querySelector(".landing-main-container .main-text-container");
-
+let landingStrong = document.getElementById("landing-strong-text")
 function animarTextoLanding(){
     landingText.classList.add("active");
+    landingStrong.classList.add("active");
 }
 
 landingText.onload = animarTextoLanding();
+
+// ANIMADOR DE LA FOTO DEL LANDING SECTION
+
+let landingImg = document.querySelector(".landing-main-container .logo-container");
+
+function animarImg(){
+    landingImg.classList.add("active");
+}
+
+landingImg.onload = animarImg();
+
+
+//ANIMADOR DEL BOTON DE LANDING SECTION
+
+let landingBtn = document.querySelector(".landing-main-container .button-container");
+
+function animarLandingBtn(){
+    landingBtn.classList.add("active");
+}
+
+landingBtn.onload = animarLandingBtn();
