@@ -31,7 +31,8 @@ html{
     border-bottom-left-radius: 8px;
     width: 0px;
     height: 50px;
-    margin-left: 398.5px;
+    /* margin-left: 398.5px; */
+    left: 106%;
     margin-top: -20px;
     transition: 2s ease;
     transition-delay: 4s;
@@ -119,10 +120,13 @@ html{
 
 
 .main-container{
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: space-around;
-    
+     */
+     /* scroll-snap-type: y mandatory;
+     overflow-y: scroll;
+     height: 100vh; */
 }
 
 
