@@ -63,6 +63,17 @@ quoteBtn.addEventListener("click", function(e){
 });
 
 
+//ANIMADOR DEL BOTON QUE GENERA FRASES
+
+quoteBtn.addEventListener("click", function(e){
+    if(quoteBtn.className !== "active"){
+        quoteBtn.classList.add("active")
+    }
+});
+
+quoteBtn.addEventListener("transitionend", function(){
+    quoteBtn.classList.remove("active")
+});
 
 // contador de diplomas
 

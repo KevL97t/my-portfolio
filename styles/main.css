@@ -331,13 +331,13 @@ html{
     margin: 0 auto;
     border-radius: 15px;
     border: 2px solid var(--main-white);
-    transition: .45s;   
+    transition: .5s;   
 }
 
-/* .about-main-container .about--quote-button-container:hover{
+.about--quote-button-container.active{
     transform: scale(1.1);
     transform-origin: center;
-} */
+}
 
 .about-main-container .about--quote-button-container p{
         text-align: center;
