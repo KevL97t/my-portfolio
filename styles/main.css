@@ -603,9 +603,9 @@ html{
 .main-projects-container{
     width: 100%;
     height: 100vh;
-    /* display: flex;
+    display: flex;
     flex-direction: column;
-    justify-content: space-around; */
+    justify-content: space-evenly;
 }
 
 .projects--main-text-container{
@@ -614,7 +614,7 @@ html{
     color: var(--main-white);
     font-size: 2.6rem;
     text-align: center;
-    margin: 50px auto 0 auto;
+    margin: 30px auto 0 auto;
     border-bottom: 2px solid var(--main-golden);
 }
 
@@ -718,9 +718,82 @@ html{
 }
 
 
+                          /* CONTACT SECTION STYLES */
+
+.main-contact-container{
+    border-top: 3px solid #E0B400;
+    height: 80vh;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.main-contact-container .contact-main-text{
+    width: 70vw;
+    height: 130px;
+    /* margin-top: 10px; */
+    /* background-color: blue; */
+    text-align: center;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    color: var(--main-white);
+    border-bottom: 1px solid #E0B400;
+}
+
+.main-contact-container .contact-main-text strong{
+    color: var(--main-golden);
+}
+
+.main-contact-container .form-container{
+    font-size: 1.8rem;
+    color: white;
+}
 
 
+.main-contact-container .form-container input{
+    height: 25px;
+    border-radius: 8px;
+    border: none;
+    margin-left: 22px;
+    padding-left: 5px;
+}
 
-.prueba{
+.mgninp{
+    margin-top: 20px;
+}
+
+.main-contact-container .form-container input:focus{
+    outline: none;
+}
+
+.main-contact-container .form-container textarea{
+    border-radius: 8px;
+    margin-top: 10px;
+    border: none;
+    padding: 5px;
+}
+
+.main-contact-container .form-container textarea:focus{
+    outline: none;
+}
+
+.form-button{
+    background-color: #E0B400;
+    width: 150px;
+    height: 40px;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    border: 2px solid var(--main-white);
+    margin-top: 15px;
+    margin-left: 60px;
+    color: var(--main-white);
+}
+
+footer{
     height: 100vh;
+    background: blue;
 }
