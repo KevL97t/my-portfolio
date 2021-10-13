@@ -23,3 +23,16 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+.learning-image{
+    position: absolute;
+    height: 150px;
+    width: 300px;
+    top: -45px;
+    left: 265px;
+    background-image: url("../assets/icons/undraw_moonlight_5ksn.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    border-bottom: 3px solid rgb(238, 214, 2);
+}
