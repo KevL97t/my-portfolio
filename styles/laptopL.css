@@ -13,8 +13,10 @@
 .first-frame{
     position: absolute;
     width: 1050px;
-    height: 3550px;
-    border: 3px solid white;
+    height: 2100px;
     left: 250px;
     z-index: 1;
+    background-color: rgba(78, 78, 78, 0.144);
+    border-radius: 40px;
+    box-shadow: rgb(238, 214, 2) 0px 20px 30px -10px;
 }
