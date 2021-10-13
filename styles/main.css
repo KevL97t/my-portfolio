@@ -260,6 +260,7 @@ html{
     opacity: 0;
     transition: 2s ease;
     transition-delay: 5s;
+    z-index: 2;
 }
 
 .button-container.active{
@@ -332,7 +333,8 @@ html{
     border-radius: 15px;
     border: 2px solid var(--main-white);
     transition: .5s;  
-    
+    cursor: pointer;
+    z-index: 2;
 }
 
 .about--quote-button-container.active{
@@ -359,6 +361,7 @@ html{
     flex-direction: column;
     justify-content: space-evenly;
     margin: 0 auto;
+    z-index: 2;
 }
 
 .main-learning-container .learning--main-text-container{
@@ -378,6 +381,7 @@ html{
 
 .main-learning-container .learning--main-diploma-container{
     width: 100%;
+    z-index: 2;
 }
 
 .learning--main-diploma-container .learning--main-diploma-container__btn{
@@ -388,6 +392,8 @@ html{
     border-radius: 15px;
     border: 2px solid var(--main-white);
     transition: .5s ease;
+    cursor: pointer;
+
 }
 
 .learning--main-diploma-container .learning--main-diploma-container__btn.active{
@@ -486,6 +492,7 @@ html{
 .dev-diplomas-container{
     margin: 22px 0px;
     white-space: nowrap;
+    z-index: 2;
 }
 
 .dev-diplomas-item{
@@ -571,6 +578,7 @@ html{
 .main-diplomas-container .other-category-container{
     margin: 22px 0px;
     white-space: nowrap;
+    z-index: 2;
 }
 
 .other-category-item{
@@ -631,6 +639,7 @@ html{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    z-index: 2;
 }
 
 .projects--main-text-container{
@@ -662,6 +671,7 @@ html{
 .projects--slider{
     margin: 50px 0px;
     white-space: nowrap;
+    z-index: 2;
 }
 
 .projects--slider__item-container{
@@ -776,6 +786,7 @@ html{
 .main-contact-container .form-container{
     font-size: 1.8rem;
     color: var(--main-golden);
+    z-index: 2;
 }
 
 
@@ -824,6 +835,7 @@ html{
     margin-top: 15px;
     margin-left: 55px;
     color: var(--main-white);
+    cursor: pointer;
 }
 
 footer{

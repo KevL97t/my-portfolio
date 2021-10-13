@@ -1,0 +1,25 @@
+.github-logo-container{
+    left: 103.1%;
+}
+
+.landing-main-container .main-text-container{
+    max-height: 80px;
+    max-width: 600px;
+}
+
+.about--main-text-container{
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.about--quote-text-container{
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+.learning--main-text-container{
+    max-width: 600px;
+    max-height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
