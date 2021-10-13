@@ -1,5 +1,8 @@
 // Animador del menú desplegable
-
+let html = document.querySelector("html")
+console.log(html)
+let w = this;
+console.log(w)
 let btnItem = document.querySelector(".item-container .btn-item");
 
 btnItem.addEventListener("click", function(e){
@@ -120,7 +123,7 @@ function animarTitulo(){
     console.log(strongTitle)
 }
 
-landingTitle.onload = animarTitulo();
+w.onload = animarTitulo();
 
 
 
@@ -131,7 +134,7 @@ function animarGitH(){
     gitHLogo.classList.add("active");
 }
 
-gitHLogo.onload = animarGitH();
+w.onload = animarGitH();
 
 
 // ANIMADOR DE TEXTO PRINCIPAL DE LANDING SECTION
@@ -143,7 +146,7 @@ function animarTextoLanding(){
     landingStrong.classList.add("active");
 }
 
-landingText.onload = animarTextoLanding();
+w.onload = animarTextoLanding();
 
 // ANIMADOR DE LA FOTO DEL LANDING SECTION
 
@@ -153,7 +156,7 @@ function animarImg(){
     landingImg.classList.add("active");
 }
 
-landingImg.onload = animarImg();
+w.onload = animarImg();
 
 
 //ANIMADOR DEL BOTON DE LANDING SECTION
@@ -164,4 +167,4 @@ function animarLandingBtn(){
     landingBtn.classList.add("active");
 }
 
-landingBtn.onload = animarLandingBtn();
+w.onload = animarLandingBtn();
