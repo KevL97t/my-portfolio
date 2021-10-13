@@ -362,6 +362,7 @@ html{
     justify-content: space-evenly;
     margin: 0 auto;
     z-index: 2;
+    position: relative;
 }
 
 .main-learning-container .learning--main-text-container{
