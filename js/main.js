@@ -112,7 +112,7 @@ function hideSection(){
 // ANIMADOR DEL TITULO LANDING PAGE
 
 let landingTitle = document.getElementById("landing-title");
-let strongTitle = document.getElementById("strong-div-title")
+let strongTitle = document.getElementById("strong-div-title");
 
 function animarTitulo(){
     if(landingTitle.className !== "landing-title active"){
@@ -176,3 +176,17 @@ w.addEventListener("load", animarGitH);
 w.addEventListener("load", animarTextoLanding);
 w.addEventListener("load", animarImg);
 w.addEventListener("load", animarLandingBtn);
+
+
+// MENSAJE DE ADVERTENCIA SALIENDO DE KALSD
+
+const $ghLink = document.querySelector(".gh-link");
+console.log($ghLink);
+
+$ghLink.addEventListener("click", (e) => {
+    e.preventDefault();
+    const confirmation = window.confirm("Wait! You're about to exit KalSd are you sure you want to continue?");
+    if(confirmation === true){
+        window.open('https://github.com/KevL97t', '_blank')
+    }
+})
