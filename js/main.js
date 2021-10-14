@@ -123,7 +123,7 @@ function animarTitulo(){
     console.log(strongTitle)
 }
 
-w.onload = animarTitulo();
+// w.onload = animarTitulo();
 
 
 
@@ -134,7 +134,7 @@ function animarGitH(){
     gitHLogo.classList.add("active");
 }
 
-w.onload = animarGitH();
+// w.onload = animarGitH();
 
 
 // ANIMADOR DE TEXTO PRINCIPAL DE LANDING SECTION
@@ -146,7 +146,7 @@ function animarTextoLanding(){
     landingStrong.classList.add("active");
 }
 
-w.onload = animarTextoLanding();
+// w.onload = animarTextoLanding();
 
 // ANIMADOR DE LA FOTO DEL LANDING SECTION
 
@@ -156,7 +156,7 @@ function animarImg(){
     landingImg.classList.add("active");
 }
 
-w.onload = animarImg();
+// w.onload = animarImg();
 
 
 //ANIMADOR DEL BOTON DE LANDING SECTION
@@ -167,4 +167,12 @@ function animarLandingBtn(){
     landingBtn.classList.add("active");
 }
 
-w.onload = animarLandingBtn();
+// w.onload = animarLandingBtn();
+
+//DESENCADENADOR DE ANIMACIONES LANDING SECTION PROPULSADO POR HOISTING
+
+w.addEventListener("load", animarTitulo);
+w.addEventListener("load", animarGitH);
+w.addEventListener("load", animarTextoLanding);
+w.addEventListener("load", animarImg);
+w.addEventListener("load", animarLandingBtn);
