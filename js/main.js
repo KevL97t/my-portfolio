@@ -19,6 +19,22 @@ function ocultarClase(){
     btnItem.classList.remove("active");
 }
 
+let menuElements = document.querySelectorAll(".item-content > a");
+console.log(menuElements)
+for(let i=0; i<menuElements.length; i++){
+    menuElements[i].addEventListener("click",() =>{
+        hideElements();
+    });
+}
+
+
+function hideElements(){
+    if(btnItem.className == "btn-item active"){
+        ocultarClase();
+    }
+}
+
+
 
 // Generador de frase aleatoria
 
@@ -129,10 +145,10 @@ function animarTitulo(){
 
 // ANIMADOR DEL LOGO DE GITHUB
 
-let gitHLogo = document.querySelector(".github-logo-container");
-function animarGitH(){
-    gitHLogo.classList.add("active");
-}
+// let gitHLogo = document.querySelector(".github-logo-container");
+// function animarGitH(){
+//     gitHLogo.classList.add("active");
+// }
 
 // w.onload = animarGitH();
 
@@ -172,7 +188,7 @@ function animarLandingBtn(){
 //DESENCADENADOR DE ANIMACIONES LANDING SECTION PROPULSADO POR HOISTING
 
 w.addEventListener("load", animarTitulo);
-w.addEventListener("load", animarGitH);
+// w.addEventListener("load", animarGitH);
 w.addEventListener("load", animarTextoLanding);
 w.addEventListener("load", animarImg);
 w.addEventListener("load", animarLandingBtn);
@@ -180,13 +196,13 @@ w.addEventListener("load", animarLandingBtn);
 
 // MENSAJE DE ADVERTENCIA SALIENDO DE KALSD
 
-const $ghLink = document.querySelector(".gh-link");
-console.log($ghLink);
+// const $ghLink = document.querySelector(".gh-link");
+// console.log($ghLink);
 
-$ghLink.addEventListener("click", (e) => {
-    e.preventDefault();
-    const confirmation = window.confirm("Wait! You're about to exit KalSd are you sure you want to continue?");
-    if(confirmation === true){
-        window.open('https://github.com/KevL97t', '_blank')
-    }
-})
+// $ghLink.addEventListener("click", (e) => {
+//     e.preventDefault();
+//     const confirmation = window.confirm("Wait! You're about to exit KalSd are you sure you want to continue?");
+//     if(confirmation === true){
+//         window.open('https://github.com/KevL97t', '_blank')
+//     }
+// })
