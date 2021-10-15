@@ -3,7 +3,7 @@ let html = document.querySelector("html")
 console.log(html)
 let w = this;
 console.log(w)
-let btnItem = document.querySelector(".item-container .btn-item");
+let btnItem = document.querySelector(".btn-item");
 
 btnItem.addEventListener("click", function(e){
     let btn = e.target;
